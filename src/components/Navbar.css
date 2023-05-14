@@ -6,7 +6,7 @@
     background-color: #202020;
 }
 
-#navbar h2 a {
+#navbar h1 a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -37,7 +37,7 @@
 }
 
 #navbar form button:hover {
-    background-color:  #1ae18477;
+    background-color:  #53f8ab3a;
     border: 2px solid #1ae183;
     border-radius: 4px;
     color: #1ae183;

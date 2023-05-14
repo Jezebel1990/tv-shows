@@ -16,7 +16,12 @@ a {
     transition: 0.5s;
 }
 
+h2 {
+    color: #fcfaa7;
+}
+
+
 a:hover {
-    color: #1ae18477;
+    color: #53f8ab3a;
     
 }

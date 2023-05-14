@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import './SitcomGrid.css';
 import SitcomCard from "../components/SitcomCard";
 
 const Home = () => {
@@ -19,7 +20,7 @@ fetchSeries();
 
  return (
 <div className="container">
-    <h2 className="title">Melhores séries:</h2>
+    <h1 className="title">Melhores séries:</h1>
     <div className="sitcom-container">
     {series.length === 0 && <p>Carregando...</p>}
      {series.length > 0 && series.map((serie) => <SitcomCard key={serie.id} serie={serie}/>)}
