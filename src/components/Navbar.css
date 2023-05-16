@@ -6,11 +6,13 @@
     background-color: #202020;
 }
 
-#navbar h1 a {
+#navbar h2 a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
+
+
 
 #navbar form {
     display: flex;
@@ -44,3 +46,4 @@
     padding: 0.5rem;
 
 }
+

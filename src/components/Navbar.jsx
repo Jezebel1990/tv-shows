@@ -12,22 +12,24 @@ const Navbar = () => {
 
    const handleSubmit = (e) => {
        e.preventDefault();
+       console.log(search);
 
-       if (!search) return;
+       if (!search) return
 
-       navigate(`/search?q=${search}`, {replace: true });
-       setSearch("");
+        navigate(`/search?q=${search}`);
+        setSearch("");
    };
 
     return (
         <nav id="navbar">
         <h2>
          <Link to="/">
-            < TbMovie />Seriestv
-            </Link>
+         < TbMovie />Seriestv
+        </Link>
         </h2>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Busque uma série"
+        <input type="text" 
+        placeholder="Busque uma série"
         onChange={(e) => setSearch(e.target.value)}
         value={search}
         />

@@ -3,20 +3,26 @@ import { useState, useEffect } from "react";
 import './SitcomGrid.css';
 import SitcomCard from "../components/SitcomCard";
 
+const sitcom = import.meta.env.VITE_API;
+const apiKey = import.meta.env.VITE_API_KEY;
+
 const Home = () => {
 
   const [series, setSeries] = useState([]);
 
-  useEffect(() => {
-    async function fetchSeries() { 
-       const response = await fetch(
-        `https://api.themoviedb.org/3/tv/top_rated?api_key=b2a49b74bfee5799329f864836528f88`);
-       const data = await response.json();
-     setSeries(data.results);
-  }
+  const getSeries = async (url) => {
+    const res = await fetch(url);
+    const data = await res.json();
+    setSeries(data.results);
+  };
 
-fetchSeries();
+
+  useEffect(() => {
+    const series = `${sitcom}top_rated?${apiKey}`;
+    console.log(series);
+    getSeries(series);
   }, []);
+
 
  return (
 <div className="container">
