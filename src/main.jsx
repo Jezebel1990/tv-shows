@@ -15,12 +15,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
     <Routes>
     <Route element={<App />}>
-     <Route path="/" element={<Home />}>
-     <Route path="serie/:id" element={<Sitcom/>}>
+     <Route path="/" element={<Home />}/>
+     <Route path="serie/:id" element={<Sitcom />} />
       <Route path="search" element={<Search />} />
      </Route>
-     </Route>
-    </Route>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

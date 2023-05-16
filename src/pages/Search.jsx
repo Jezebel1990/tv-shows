@@ -19,12 +19,10 @@ const getSearchedSeries = async (url) => {
     setSeries(data.results);
 };
 
-       useEffect(() => {
-               const searchWithQueryURL = (
-                `${search}?${apiKey}&query=${query}`);
-             getSearchedSeries(searchWithQueryURL);
-      }, [query]);
-
+    useEffect(() => {
+    const searchWithQueryURL = `${search}?${apiKey}&query=${query}`;
+    getSearchedSeries(searchWithQueryURL);
+     }, [query]);
 
 return (
 <div className="container">

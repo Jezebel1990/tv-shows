@@ -11,13 +11,12 @@ const Navbar = () => {
    const navigate = useNavigate();
 
    const handleSubmit = (e) => {
-       e.preventDefault();
-       console.log(search);
+    e.preventDefault();
+   
+    if (!search) return;
 
-       if (!search) return
-
-        navigate(`/search?q=${search}`);
-        setSearch("");
+      navigate(`/search?q=${search}`, { replace: true });
+      setSearch("");
    };
 
     return (
