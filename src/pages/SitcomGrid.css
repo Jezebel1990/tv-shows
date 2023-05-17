@@ -16,11 +16,25 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: #710489;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
     padding: 1rem;
   }
 
 .sitcom-container div img {
     max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.6);
+}
+
+.sitcom-container :hover img {
+    object-fit: cover;
+    filter: grayscale(100%) contrast(120%);
+    box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+    display: block;
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: -10px;
 }
 
 
@@ -57,6 +71,7 @@
     transition: 0.4s;
     text-align: center;
     font-weight: bold;
+    
 }
 
 .sitcom-container div a:hover {

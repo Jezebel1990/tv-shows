@@ -4,6 +4,8 @@
     max-width: 600px;
     margin: 2rem auto;
     color: #fff;
+    
+
 }
 
 .sitcom-page svg {
@@ -22,7 +24,31 @@
     text-align: center;
 }
 
-.sitcom-page .sitcom-card img,
+.sitcom-page .sitcom-card img {
+    border-radius: 10px;
+    object-fit: cover;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80%);
+    animation: shineEffect 7s infinite;
+}
+@keyframes shineEffect {
+    0% {
+      transform: translateX(-5%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(5%);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+
+
 .sitcom-page .sitcom-card h2,
 .sitcom-page .sitcom-card p {
     margin-bottom: 1rem;

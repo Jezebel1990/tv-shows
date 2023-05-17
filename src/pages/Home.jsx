@@ -26,7 +26,8 @@ const Home = () => {
 
  return (
 <div className="container">
-    <h1 className="title">Melhores séries:</h1>
+
+    <h1 className="title"><span>Melhores séries:</span></h1>
     <div className="sitcom-container">
     {series.length === 0 && <p>Carregando...</p>}
      {series.length > 0 && series.map((serie) => <SitcomCard key={serie.id} serie={serie}/>)}

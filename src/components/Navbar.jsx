@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { TbMovie } from "react-icons/tb";
+import { BsCameraVideoFill } from "react-icons/bs"
 import { BiSearchAlt2 } from "react-icons/bi";
 import "./Navbar.css";
 
@@ -23,7 +23,7 @@ const Navbar = () => {
         <nav id="navbar">
         <h2>
          <Link to="/">
-         < TbMovie />Seriestv
+         < BsCameraVideoFill />Seriestv
         </Link>
         </h2>
       <form onSubmit={handleSubmit}>

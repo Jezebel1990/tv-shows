@@ -8,9 +8,7 @@ const SitcomCard = ({serie, showLink = true }) => {
   return (
     <div className='sitcom-card'>
 <img src={imagesURL + serie.poster_path} alt={serie.name}/>
-    <h2>{serie.name}</h2> 
-<p>
-  <FaStar /> {serie.vote_average}
+    <h2>{serie.name}</h2> <p><FaStar /> {serie.vote_average}
 </p>
 {showLink && <Link to={`/serie/${serie.id}`}>Detalhes
   </Link>}
