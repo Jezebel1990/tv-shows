@@ -47,7 +47,6 @@ const convertDate = (dateCurrency) => {
         <SitcomCard serie={serie} showLink={false} />
         <p className="tagline">{serie.tagline}</p>
 
-        
         <div className="info">
         <h3>
           <MdMovieFilter /> Nome original:
